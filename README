@@ -1,0 +1,9 @@
+quick README to explain usage:
+
+Two example frames are included, cmp.data and cmp2.data, you can display them with gst-launch-1.0 filesrc location=cmp.data ! videoparse ! imagefreeze ! xvimagesink
+
+They are 320 x 240 frames, so :
+
+make && ./ssim_compare_yuv cmp.data cmp2.data 320 240
+
+The displayed float result is the percentage of similarity between the two frames, look at the code to learn more.
